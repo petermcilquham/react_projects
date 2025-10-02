@@ -1,4 +1,4 @@
-import type { Goal, Poison } from "~/screens/Gym";
+import type { Goal, Poison } from "~/screens/WorkoutApp";
 import { EXERCISES, SCHEMES, TEMPOS, WORKOUTS } from "./swoldier"
 
 type Exercise = {

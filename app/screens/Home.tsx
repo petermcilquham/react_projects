@@ -2,9 +2,9 @@ import { Link } from 'react-router';
 
 export function Home() {
   return (
-    <main className='flex flex-col justify-start items-center w-[100vw]'>
-      <h1 className='text-[3.5rem] my-10'>My React Projects</h1>
-      <div className='flex flex-row flex-wrap gap-10'>
+    <main className={`flex flex-col justify-start items-center w-[100vw] h-screen relative bg-[url('/coding-wallpaper.png')] bg-cover`}>
+      <h1 className='text-[3.5rem] mt-30 mb-15'>My React Projects</h1>
+      <div className='flex flex-row flex-wrap justify-center gap-10 max-w-[800px]'>
         {reactProjects.map((project, index) => {
           return (
             <Link to={`${project.link}`} key={index}>
@@ -12,6 +12,10 @@ export function Home() {
             </Link>
           );
         })}
+      </div>
+      <div className='fixed bottom-2 left-2'>
+        <p className='text-[1rem]'>Peter Lyck McIlquham Schmidt</p>
+        <p className='text-[0.8rem]'>peter.lm.schmidt@gmail.com</p>
       </div>
     </main>
   );
@@ -24,5 +28,5 @@ const reactProjects = [
   // { title: 'Chef Claude', link: 'chefclaude' },
   { title: 'Tenzies', link: 'tenzies' },
   { title: 'Meme Generator', link: 'memegen' },
-  { title: 'Gym App', link: 'gym' },
+  { title: 'Workout App', link: 'workoutapp' },
 ];

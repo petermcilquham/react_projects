@@ -8,5 +8,5 @@ export default [
     // route("chefclaude","routes/chefclaude.tsx"),
     route("tenzies","routes/tenzies.tsx"),
     route("memegen","routes/memegen.tsx"),
-    route("gym","routes/gym.tsx"),
+    route("workoutapp","routes/workoutapp.tsx"),
 ] satisfies RouteConfig;

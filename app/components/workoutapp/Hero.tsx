@@ -1,6 +1,7 @@
 import Button from './Button';
 
-export default function Hero() {
+export default function Hero(props: { scrollFunc: any }) {
+  const { scrollFunc } = props;
   return (
     <div className='min-h-screen flex flex-col gap-10 items-center justify-center text-center max-w-[800px] w-full mx-auto'>
       <div className='flex flex-col gap-4'>
@@ -13,12 +14,7 @@ export default function Hero() {
         I hereby acknowledge that i may become <span className='text-blue-400 font-medium'>unbelievably swolenormous</span> and accept all risks of becoming the
         local <span className='text-blue-400 font-medium'>mass monstrosity</span>, afflicted with severe body dismorphia, unable to fit through doors.
       </p>
-      <Button
-        text={'Accept & Begin'}
-        func={() => {
-          window.location.href = '#generate';
-        }}
-      />
+      <Button text={'Accept & Begin'} func={scrollFunc} />
     </div>
   );
 }

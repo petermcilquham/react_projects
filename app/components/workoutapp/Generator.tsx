@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import type { Poison } from '~/screens/Gym';
+import type { Poison } from '~/screens/WorkoutApp';
 import { SCHEMES, WORKOUTS } from './utils/swoldier';
 import SectionWrapper from './SectionWrapper';
 import Button from './Button';
