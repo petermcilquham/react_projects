@@ -1,8 +1,8 @@
 import type { Route } from './+types/home';
-import { Home } from '../screens/Home';
+import { MemeGen } from '../screens/MemeGen';
 
 export function meta({}: Route.MetaArgs) {
-  return [{ title: 'My React Projects' }, { name: 'description', content: 'My React Projects' }];
+  return [{ title: 'Meme Generator' }, { name: 'description', content: 'Meme Generator' }];
 }
 
 // HydrateFallback is rendered while the client loader is running
@@ -10,6 +10,6 @@ export function HydrateFallback() {
   return <div>Loading...</div>;
 }
 
-export default function HomePage() {
-  return <Home />;
+export default function MemeGenPage() {
+  return <MemeGen />;
 }

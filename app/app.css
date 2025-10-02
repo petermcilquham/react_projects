@@ -3,6 +3,9 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-button-purple: #5035FF;
+  --color-green: #59E391;
 }
 
 html,
@@ -14,19 +17,3 @@ body {
   }
 }
 
-/* main {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: 450px;
-    margin-bottom: 36px;
-} */

@@ -1,8 +1,8 @@
 import type { Route } from './+types/home';
-import { Home } from '../screens/Home';
+import { Hangman } from '../screens/Hangman';
 
 export function meta({}: Route.MetaArgs) {
-  return [{ title: 'My React Projects' }, { name: 'description', content: 'My React Projects' }];
+  return [{ title: 'Hangman Game' }, { name: 'description', content: 'Hangman Game' }];
 }
 
 // HydrateFallback is rendered while the client loader is running
@@ -10,6 +10,6 @@ export function HydrateFallback() {
   return <div>Loading...</div>;
 }
 
-export default function HomePage() {
-  return <Home />;
+export default function HangmanPage() {
+  return <Hangman />;
 }
