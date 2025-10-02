@@ -13,25 +13,25 @@ export function Apod() {
   }
   useEffect(() => {
     async function fetchAPIData() {
-      const NASA_KEY = import.meta.env.NASA_API_KEY;
-      const url = 'https://api.nasa.gov/planetary/apod' + `?api_key=${NASA_KEY}`;
+      const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;
+      const url = `https://api.nasa.gov/planetary/apod?api_key=${NASA_KEY}`;
 
-      const today = new Date().toDateString();
-      const localKey = `NASA-${today}`;
-      if (localStorage.getItem(localKey)) {
-        const apiData = JSON.parse(localStorage.getItem(localKey)!);
-        setData(apiData);
-        console.log('Fetched from cache');
-        return;
-      }
+      // const today = new Date().toDateString();
+      // const localKey = `NASA-${today}`;
+      // if (localStorage.getItem(localKey)) {
+      //   const apiData = JSON.parse(localStorage.getItem(localKey)!);
+      //   setData(apiData);
+      //   console.log('Fetched from cache');
+      //   return;
+      // }
 
       localStorage.clear();
       try {
         const response = await fetch(url);
         const apiData = await response.json();
         setData(apiData);
-        localStorage.setItem(localKey, JSON.stringify(apiData));
-        console.log('Fetched from API');
+        // localStorage.setItem(localKey, JSON.stringify(apiData));
+        // console.log('Fetched from API');
       } catch (err: any) {
         console.log(err.message);
       }
