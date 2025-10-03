@@ -25,7 +25,7 @@ export function Tenzies() {
   return (
     <div className='w-full bg-gray-800'>
       <main className='h-[100vh] flex flex-col justify-center items-center'>
-        {gameWon && <Confetti />}
+        {gameWon && <Confetti numberOfPieces={600} initialVelocityY={20} />}
         <h1 className='text-[3rem] m-0'>Tenzies</h1>
         <p className='text-[1.5rem] font-400 mt-0 mb-5 text-center'>
           Roll until all dice are the same. Click each die to freeze it at its current value between rolls.

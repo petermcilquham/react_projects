@@ -1,9 +1,10 @@
 import { Link } from 'react-router';
+import img from '/coding-wallpaper.png';
 
 export function Home() {
   return (
-    <main className={`flex flex-col justify-start items-center w-[100vw] h-screen relative bg-[url('/coding-wallpaper.png')] bg-cover`}>
-      <h1 className='text-[3.5rem] mt-30 mb-15'>My React Projects</h1>
+    <main className={`flex flex-col justify-start items-center px-5 w-[100vw] h-screen relative lg:bg-[url('/coding-wallpaper.png')] bg-cover`}>
+      <h1 className='text-[3rem] md:text-[3.5rem] mt-25 lg:mt-15 xl:mt-25 mb-10'>My React Projects</h1>
       <div className='flex flex-row flex-wrap justify-center gap-10 max-w-[800px]'>
         {reactProjects.map((project, index) => {
           return (
@@ -29,4 +30,6 @@ const reactProjects = [
   { title: 'Tenzies', link: 'tenzies' },
   { title: 'Meme Generator', link: 'memegen' },
   { title: 'Workout App', link: 'workoutapp' },
+  /// TODO machine learnin app youtube
+  /// chef claude?
 ];

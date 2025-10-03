@@ -35,12 +35,12 @@ export function MemeGen() {
   }
   return (
     <>
-      <header className='header'>
+      <header className='memeHeader'>
         <img src={trollFace} />
         <h1>Meme Generator</h1>
       </header>
-      <main>
-        <div className='form'>
+      <main className='memeMain'>
+        <div className='memeForm'>
           <label>
             Top Text
             <input type='text' placeholder='One does not simply' name='topText' onChange={handleChange} value={meme.topText} />
@@ -54,8 +54,8 @@ export function MemeGen() {
         </div>
         <div className='meme'>
           <img src={meme.imageUrl} />
-          <span className='top'>{meme.topText}</span>
-          <span className='bottom'>{meme.bottomText}</span>
+          <span className='memeTop'>{meme.topText}</span>
+          <span className='memeBottom'>{meme.bottomText}</span>
         </div>
       </main>
     </>

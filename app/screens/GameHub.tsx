@@ -18,7 +18,6 @@ export interface GameQuery {
 }
 
 export function GameHub() {
-  console.log(import.meta.env.GAMEHUB_KEY);
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
   return (
     <Provider>

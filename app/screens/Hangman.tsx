@@ -38,7 +38,7 @@ export function Hangman() {
   }
 
   return (
-    <main>
+    <main className='hmMain'>
       {isGameWon && <Confetti recycle={false} numberOfPieces={1000} />}
       <Header />
       <GameStatus isGameOver={isGameOver} isGameWon={isGameWon} isGameLost={isGameLost} isLastGuessWrong={isLastGuessWrong} wrongGuessCount={wrongGuessCount} />

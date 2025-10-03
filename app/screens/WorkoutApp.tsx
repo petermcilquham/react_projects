@@ -35,7 +35,7 @@ export default function WorkoutApp() {
     generateRef.current?.scrollIntoView();
   }
   return (
-    <main className='min-h-screen flex flex-col bg-gradient-to-r from-slate-800 to-slate-950 text-white text-sm sm:text-base'>
+    <main className='woMain min-h-screen flex flex-col bg-gradient-to-r from-slate-800 to-slate-950 text-white text-sm sm:text-base'>
       <Hero scrollFunc={scrollFunction} />
       <div ref={generateRef}>
         <Generator

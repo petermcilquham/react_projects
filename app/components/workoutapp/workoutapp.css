@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+.woMain{
     font-family:"Poppins", sans-serif;
 }
 
-span {
+.woMain span {
     font-family: inherit;
     font-weight: inherit;
 }
@@ -18,6 +18,6 @@ span {
     transform: translate(-3px, -3px);
     box-shadow: 6px 6px 0 0 #60a5fa;
 }
-html {
+.woMain {
     scroll-behavior: smooth;
 }

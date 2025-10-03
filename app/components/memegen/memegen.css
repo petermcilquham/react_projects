@@ -1,20 +1,20 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
-    font-family: "Karla", sans-serif;
     margin: 0;
-    height: 100vh;
 }
 
-main {
+.memeMain {
+    height: 100vh;
+    font-family: "Karla", sans-serif;
     margin-inline: auto;
     padding: 25px;
     max-width: 600px;
 }
 
-.header {
+.memeHeader {
     display: flex;
     align-items: center;
     height: 65px;
@@ -23,24 +23,24 @@ main {
     padding: 20px;
 }
 
-.header > img {
+.memeHeader > img {
     height: 100%;
     margin-right: 6px;
 }
 
-.header > h1 {
+.memeHeader > h1 {
     font-size: 1.25rem;
     margin-right: auto;
 }
 
-.form {
+.memeForm {
     display: grid;
     grid-template: auto auto / 1fr 1fr;
     gap: 17px;
     margin-bottom: 17px;
 }
 
-.form input {
+.memeForm input {
     width: 100%;
     margin-top: 5px;
     border-radius: 5px;
@@ -48,7 +48,7 @@ main {
     text-indent: 5px;
 }
 
-.form button {
+.memeForm button {
     grid-column: 1 / -1;
     border-radius: 5px;
     background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
@@ -57,7 +57,7 @@ main {
     cursor: pointer;
 }
 
-.form input, .form button {
+.memeForm input, .memeForm button {
     min-height: 40px;
     font-family: "Karla", sans-serif;
 }
@@ -98,10 +98,10 @@ main {
         2px 2px 5px #000;
 }
 
-.bottom {
-    bottom: 0;
+.memeTop {
+    top: 0;
 }
 
-.top {
-    top: 0;
+.memeBottom {
+    bottom: 0;
 }
