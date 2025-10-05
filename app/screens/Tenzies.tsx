@@ -23,20 +23,20 @@ export function Tenzies() {
   }
 
   return (
-    <div className='w-full bg-gray-800'>
+    <div className='w-full bg-gray-800 text-white'>
       <main className='h-[100vh] flex flex-col justify-center items-center'>
         {gameWon && <Confetti numberOfPieces={600} initialVelocityY={20} />}
         <h1 className='text-[3rem] m-0'>Tenzies</h1>
         <p className='text-[1.5rem] font-400 mt-0 mb-5 text-center'>
           Roll until all dice are the same. Click each die to freeze it at its current value between rolls.
         </p>
-        {gameWon && <p className='text-green mb-5'>Congrats! You won! This time...</p>}
+        {gameWon && <p className='text-green-400 mb-5'>Congrats! You won! This time...</p>}
         <div className='flex flex-row flex-wrap gap-[20px] mb-[40px] w-[350px]'>
           {dice.map((die, index) => {
             return <Die key={index} value={die.value} isHeld={die.isHeld} id={die.id} holdDie={holdDie} />;
           })}
         </div>
-        <button onClick={gameWon ? newGame : rollDice} className='cursor-pointer bg-button-purple text-white text-[1.75rem] font-bold rounded-md px-5'>
+        <button onClick={gameWon ? newGame : rollDice} className='cursor-pointer bg-purple-800 text-white text-[1.75rem] font-bold rounded-md px-5'>
           {gameWon ? 'New Game' : 'Roll'}
         </button>
       </main>

@@ -9,4 +9,5 @@ export default [
     route("tenzies","routes/tenzies.tsx"),
     route("memegen","routes/memegen.tsx"),
     route("workoutapp","routes/workoutapp.tsx"),
+    route("freescribe","routes/freescribe.tsx"),
 ] satisfies RouteConfig;
