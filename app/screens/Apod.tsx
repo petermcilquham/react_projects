@@ -11,6 +11,17 @@ export function Apod() {
   function handleToggleModal() {
     setShowModal(!showModal);
   }
+
+  // const start = new Date(1995, 6, 16);
+  // const end = new Date();
+  // function randomDate(start: Date, end: Date) {
+  //   return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+  // }
+  // const randDate = randomDate(start, end).toISOString().slice(0, 10);
+  // fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY_NASA}&date=${randDate}`);
+  // .then(response => response.json(response.data))
+  /// get random date picture
+  // https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2015-07-10 //insert random date
   useEffect(() => {
     async function fetchAPIData() {
       const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;

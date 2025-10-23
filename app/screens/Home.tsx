@@ -26,7 +26,7 @@ export function Home() {
 const reactProjects = [
   { title: 'GameHub', link: 'gamehub' },
   { title: 'Hangman', link: 'hangman' },
-  { title: 'APOD', link: 'apod' },
+  // { title: 'APOD', link: 'apod' },
   // { title: 'Chef Claude', link: 'chefclaude' },
   { title: 'Tenzies', link: 'tenzies' },
   { title: 'Meme Generator', link: 'memegen' },
